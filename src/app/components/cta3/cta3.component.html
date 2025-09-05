@@ -1,0 +1,70 @@
+<div class="cta3-container1 thq-section-padding">
+  <div class="cta3-max-width thq-section-max-width">
+    <div class="cta3-container2 thq-flex-row">
+      <img
+        [attr.alt]="image1Alt"
+        [attr.src]="image1Src"
+        class="cta3-placeholder-image thq-img-ratio-16-9"
+      />
+      <div class="cta3-column">
+        <span class="thq-heading-2">
+          <ng-container>
+            <ng-template #defaultContent1>
+              <div class="cta3-fragment4">
+                <span class="cta3-text8">Medium length heading goes here</span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="content1 ? content1 : defaultContent1"
+            ></ng-container>
+          </ng-container>
+        </span>
+        <p class="thq-body-small">
+          <ng-container>
+            <ng-template #defaultContent2>
+              <div class="cta3-fragment2">
+                <span class="cta3-text6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.
+                </span>
+              </div>
+            </ng-template>
+            <ng-container
+              *ngTemplateOutlet="content2 ? content2 : defaultContent2"
+            ></ng-container>
+          </ng-container>
+        </p>
+        <div class="cta3-actions">
+          <button type="button" class="thq-button-filled">
+            <span>
+              <ng-container>
+                <ng-template #defaultAction1>
+                  <div class="cta3-fragment1">
+                    <span class="cta3-text5">Action1</span>
+                  </div>
+                </ng-template>
+                <ng-container
+                  *ngTemplateOutlet="action1 ? action1 : defaultAction1"
+                ></ng-container>
+              </ng-container>
+            </span>
+          </button>
+          <button type="button" class="thq-button-outline">
+            <span>
+              <ng-container>
+                <ng-template #defaultAction2>
+                  <div class="cta3-fragment3">
+                    <span class="cta3-text7">Action2</span>
+                  </div>
+                </ng-template>
+                <ng-container
+                  *ngTemplateOutlet="action2 ? action2 : defaultAction2"
+                ></ng-container>
+              </ng-container>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
